@@ -1,0 +1,107 @@
+.main-bg {
+    background-image: url('img/abstract-envelope.png');
+    background-size: cover;
+    background-position: center center;
+    color: rgb(75, 75, 75);
+}
+
+.menu {
+    background: rgb(201, 201, 201);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    color: teal;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.white-bg {
+    background: whitesmoke;
+    color: rgb(64, 64, 64);
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2px;
+    font-size: 15px;
+    color: teal;
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    right: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: greenyellow;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    right: 50%;
+}
+
+.menu h1 a {
+    color: teal;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  color: rgb(7, 192, 142);
+  font-size: 18px;
+}
+
+.spnQtd {
+  padding: 10px;
+  text-align: end;
+  font-family: "Montserrat", sans-serif;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: whitesmoke;
+}
+
+.finish {
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  color: rgb(7, 192, 142);
+}
+
+.finish button {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
